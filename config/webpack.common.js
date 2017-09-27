@@ -4,6 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const path = require('path');
 const rootDir = path.resolve(__dirname, '..');
+const helpers = require('./helpers');
 
 module.exports = {
     entry: {
@@ -23,6 +24,7 @@ module.exports = {
                 loaders: ['awesome-typescript-loader', 'angular2-template-loader']
             },{
                 test: /\.(scss)$/,
+                exclude: [helpers.root('src')],
                 use: [{
                   loader: 'style-loader', // inject CSS to page
                 }, {
@@ -50,8 +52,9 @@ module.exports = {
                 loader: 'file-loader?name=assets/[name].[hash].[ext]'
             },
             {
-                test: /\.css$/,
-                loaders: ['to-string-loader', 'css-loader', 'sass-loader']
+                test: /\.(css|scss)$/,
+                loaders: ['to-string-loader', 'css-loader', 'sass-loader'],
+                exclude: [helpers.root('node_modules')],
             }
         ]
     },
