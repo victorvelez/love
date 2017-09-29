@@ -1,16 +1,20 @@
 @import "../../assets/scss/variables.scss";
-
+.logo{
+  width: 80%; 
+}
 #mainNav {
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'BentonSansBook','sans-serif';
+    //font-weight: 700;
     text-transform: uppercase;
     border: none;
-    background: $theme-primary;
+    //background: #1e160e;//$theme-primary;
+    background: url("../../assets/img/mariposas.gif") no-repeat scroll center right #1e160e;
+    border-bottom: 5px solid #7e6857;
     a:focus {
       outline: none;
     }
     .navbar-brand {
-      font-size: 1.1rem;
+     // font-size: 10px;
       color: white;
       &.active,
       &:active,
@@ -23,7 +27,7 @@
       letter-spacing: 1px;
       li.nav-item {
         a.nav-link {
-          color: #000;
+          color: #fff;
           &:hover {
             color: $theme-success;
             outline: none;
@@ -36,7 +40,7 @@
       }
     }
     .navbar-toggler {
-      font-size: 14px;
+      font-size: 12px;
       padding: 11px;
       text-transform: uppercase;
       color: white;
@@ -51,13 +55,13 @@
   }
   @media(min-width:992px) {
     #mainNav {
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
       -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
       transition: padding-top 0.3s, padding-bottom 0.3s;
       .navbar-brand {
-        font-size: 2em;
+        font-size: 14px;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
