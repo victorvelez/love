@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 import { HeaderComponent } from './../header/header.component';
 import { NavBarComponent } from './../navbar/navbar.component';
+import { AccessoriesComponent } from './../accessories/accessories.component';
 
 
 import { routing, appRoutingProviders } from "./home.routing";
@@ -18,7 +19,8 @@ import { routing, appRoutingProviders } from "./home.routing";
     declarations: [
         HomeComponent,
         HeaderComponent,
-        NavBarComponent
+        NavBarComponent,
+        AccessoriesComponent
     ],
     providers:[appRoutingProviders],
     bootstrap: [ HomeComponent ]
