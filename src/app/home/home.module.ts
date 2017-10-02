@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 import { HeaderComponent } from './../header/header.component';
+import { NavBarComponent } from './../navbar/navbar.component';
+
 
 import { routing, appRoutingProviders } from "./home.routing";
 
@@ -15,7 +17,8 @@ import { routing, appRoutingProviders } from "./home.routing";
     ],
     declarations: [
         HomeComponent,
-        HeaderComponent
+        HeaderComponent,
+        NavBarComponent
     ],
     providers:[appRoutingProviders],
     bootstrap: [ HomeComponent ]

@@ -1,0 +1,90 @@
+@import "../../assets/scss/variables.scss";
+.logo{
+  width: 80%; 
+}
+// 54.243.133.192
+#mainNav {
+    font-family: 'BentonSansBook','sans-serif';
+    //font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    //background: #1e160e;//$theme-primary;
+    background: url("../../assets/img/mariposas.gif") no-repeat scroll center right #1e160e;
+    border-bottom: 5px solid #7e6857;
+    a:focus {
+      outline: none;
+    }
+    .navbar-brand {
+     // font-size: 10px;
+      color: white;
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        color: white;
+      }
+    }
+    .navbar-nav {
+      letter-spacing: 1px;
+      li.nav-item {
+        a.nav-link {
+          color: #fff;
+          &:hover {
+            color: $theme-success;
+            outline: none;
+          }
+          &:active,
+          &:focus {
+            color: white;
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      font-size: 12px;
+      padding: 11px;
+      text-transform: uppercase;
+      color: white;
+      border-color: white;
+      &:focus,
+      &:hover {
+        color: white;
+        border-color: $theme-success;
+        background-color: $theme-success;
+      }
+    }
+  }
+  @media(min-width:992px) {
+    #mainNav {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+      -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+      transition: padding-top 0.3s, padding-bottom 0.3s;
+      .navbar-brand {
+        font-size: 14px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .navbar-nav > li.nav-item > a.nav-link.active {
+        color: white;
+        border-radius: 3px;
+        background: $theme-success;
+        &:active,
+        &:focus,
+        &:hover {
+          color: white;
+          background: $theme-success;
+        }
+      }
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .navbar-brand {
+        font-size: 1.5em;
+      }
+    }
+  }
+  
