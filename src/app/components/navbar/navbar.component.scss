@@ -1,4 +1,4 @@
-@import "../../assets/scss/variables.scss";
+@import "../../../assets/scss/variables.scss";
 .logo{
   width: 80%; 
 }
@@ -9,7 +9,7 @@
     text-transform: uppercase;
     border: none;
     //background: #1e160e;//$theme-primary;
-    background: url("../../assets/img/mariposas.gif") no-repeat scroll center right #1e160e;
+    background: url("../../../assets/img/mariposas.gif") no-repeat scroll center right #1e160e;
     border-bottom: 5px solid #7e6857;
     a:focus {
       outline: none;
