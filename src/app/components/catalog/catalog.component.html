@@ -1,64 +1,11 @@
-<h1 class="my-4 text-center text-lg-left">Accesorios</h1>
-      <div class="row text-center text-lg-left">
+<div class="page_catalog">
+  <h1 class="page_catalog-title">Products catalog</h1>
 
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+  <div style="display: flex; justify-content: space-around">
+      <div class="page_catalog-list">
+          <div class="flex-container flex-wrap">
+              <lv-catalog-item *ngFor="let product of products" class="item page_catalog-list-item" [item]="product"></lv-catalog-item>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-          </div>
-        </div>
       </div>
+  </div>
+</div>
