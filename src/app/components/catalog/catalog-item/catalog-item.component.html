@@ -1,12 +1,14 @@
-<div class="ui card page_catalog-list-item">
-    <div class="image page_catalog-list-item--image">
-        <img src="{{item.image}}">
+
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{item.image}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">{{item.title}}</a>
+        </h4>
+        <h5>${{item.price}}</h5>
+        <p class="card-text">{{item.description.slice(0, 115) + '...'}}</p>
+      </div>
+      <!-- <div class="card-footer">
+        <small class="text-muted">★ ★ ★ ★ ☆</small>
+      </div> -->
     </div>
-    <div class="content">
-        <a class="header page_catalog-list-item-header" (click)="preview(item._id)">{{item.brand}} {{item.title}}</a>
-        <div class="meta">
-            <span class="cinema page_catalog-list-item--price">{{item.price}} $, {{item.date}}</span>
-        </div>
-        <div class="description">{{item.description.slice(0, 115) + '...'}}</div>
-    </div>
-</div>

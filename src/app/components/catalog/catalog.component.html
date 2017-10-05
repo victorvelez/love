@@ -1,11 +1,7 @@
-<div class="page_catalog">
-  <h1 class="page_catalog-title">Products catalog</h1>
-
-  <div style="display: flex; justify-content: space-around">
-      <div class="page_catalog-list">
-          <div class="flex-container flex-wrap">
-              <lv-catalog-item *ngFor="let product of products" class="item page_catalog-list-item" [item]="product"></lv-catalog-item>
-          </div>
-      </div>
-  </div>
+<div style="display: flex; justify-content: space-around">
+         <div class="page_catalog-list">
+            <div class="row">
+                <lv-catalog-item *ngFor="let product of products" class="col-lg-3 col-md-4 mb-4" [item]="product"></lv-catalog-item>
+            </div>
+        </div>
 </div>

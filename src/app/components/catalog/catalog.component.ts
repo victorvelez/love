@@ -17,7 +17,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
-        product.image = "http://placehold.it/400x300";
+        product.image = "http://placehold.it/140x100";
         product.price = 50000;
         product.title = "Conjunto 01";
         this.products.push(product);
@@ -27,7 +27,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
-        product.image = "http://placehold.it/400x300";
+        product.image = "http://placehold.it/140x100";
         product.price = 30000;
         product.title = "Conjunto 02";
         this.products.push(product);
@@ -37,7 +37,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
-        product.image = "http://placehold.it/400x300";
+        product.image = "http://placehold.it/140x100";
         product.price = 10000;
         product.title = "Conjunto 03";
         this.products.push(product);
@@ -47,7 +47,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
-        product.image = "http://placehold.it/400x300";
+        product.image = "http://placehold.it/140x100";
         product.price = 35000;
         product.title = "Conjunto 04";
 
