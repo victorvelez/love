@@ -1,5 +1,7 @@
 import {Component, OnDestroy, OnInit, ViewEncapsulation } from "@angular/core";
-
+import { ActivatedRoute } from "@angular/router";
+import { Subscription } from "rxjs/Subscription";
+import { NavBarService } from './../navbar/navbar.service'
 import { Product } from '../../models';
 
 @Component({
@@ -10,8 +12,19 @@ import { Product } from '../../models';
 export class  CatalogComponent  implements OnInit, OnDestroy{ 
 
     private products: Product[] = [];
+    private categorie: string;
+    private _subscription: Subscription;
+    constructor(private router: ActivatedRoute, private navBarService: NavBarService){
+
+        }
 
     public ngOnInit(): void {
+
+       
+        this._subscription = this.router.params.subscribe(params => {
+            this.categorie = params["categorie"];
+        });
+
         var product: Product = new Product();
         product.id = "1";
         product.brand = "Lorena Velez";
@@ -55,6 +68,10 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
     }
 
     public ngOnDestroy(): void {
-      
+        this._subscription.unsubscribe();
+    }
+
+    public getDescription(categoriePath: string):string {
+        return this.navBarService.getDescription(categoriePath);
     }
 }

@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CatalogModule }  from './../catalog/catalog.module';
+import { NavBarModule }  from './../navbar/navbar.module'
 
 import { HomeComponent } from './home.component';
 import { HeaderComponent } from './../header/header.component';
-import { NavBarComponent } from './../navbar/navbar.component';
-import { AccessoriesComponent } from './../accessories/accessories.component';
 
 
 import { routing, appRoutingProviders } from "./home.routing";
@@ -15,15 +14,14 @@ import { routing, appRoutingProviders } from "./home.routing";
     imports: [
         BrowserModule,
         CatalogModule,
+        NavBarModule,
         FormsModule,
         ReactiveFormsModule,
         routing,
     ],
     declarations: [
         HomeComponent,
-        HeaderComponent,
-        NavBarComponent,
-        AccessoriesComponent
+        HeaderComponent
     ],
     providers:[appRoutingProviders],
     bootstrap: [ HomeComponent ]
