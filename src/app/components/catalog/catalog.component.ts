@@ -13,7 +13,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
 
     public ngOnInit(): void {
         var product: Product = new Product();
-        product._id = 1;
+        product.id = "1";
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
@@ -23,7 +23,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         this.products.push(product);
 
         product = new Product();
-        product._id = 2;
+        product.id = "2";
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
@@ -33,7 +33,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         this.products.push(product);
 
         product = new Product();
-        product._id = 3;
+        product.id = "3";
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];
@@ -43,7 +43,7 @@ export class  CatalogComponent  implements OnInit, OnDestroy{
         this.products.push(product);
 
         product = new Product();
-        product._id = 4;
+        product.id = "4";
         product.brand = "Lorena Velez";
         product.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
         product.details = ["red", "white", "special"];

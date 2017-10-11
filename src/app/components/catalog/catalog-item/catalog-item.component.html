@@ -6,9 +6,10 @@
           <a href="#">{{item.title}}</a>
         </h4>
         <h5>${{item.price}}</h5>
-        <p class="card-text">{{item.description.slice(0, 115) + '...'}}</p>
+        <p class="card-text">{{item.description.slice(0, 40) + '...'}}</p>
       </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">★ ★ ★ ★ ☆</small>
-      </div> -->
+       <div class="card-footer">
+          <button type="button" class="btn btn-primary" data-toggle="modal" [attr.data-target]="'#' + item.id">Open Modal {{ item.id }}</button>
+          <lv-item-detail [product]="item" [modalId]='item.id'></lv-item-detail>
+      </div>
     </div>
