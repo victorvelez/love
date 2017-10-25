@@ -5,17 +5,14 @@
 // 54.243.133.192
 #mainNav {
     font-family: 'BentonSansBook','sans-serif';
-    //font-weight: 700;
     text-transform: uppercase;
     border: none;
-    //background: #1e160e;//$theme-primary;
-    background: url("../../../assets/img/mariposas.gif") no-repeat scroll center right #1e160e;
-    border-bottom: 5px solid #7e6857;
+    background: url("../../../assets/img/mariposas.gif") no-repeat scroll center right #15100a;
+    border-bottom: 5px solid #6d5740;
     a:focus {
       outline: none;
     }
     .navbar-brand {
-     // font-size: 10px;
       color: white;
       &.active,
       &:active,
@@ -61,6 +58,7 @@
       -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
       -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
       transition: padding-top 0.3s, padding-bottom 0.3s;
+      line-height: 5px;
       .navbar-brand {
         font-size: 14px;
         -webkit-transition: all 0.3s;
@@ -69,13 +67,13 @@
       }
       .navbar-nav > li.nav-item > a.nav-link.active {
         color: white;
-        border-radius: 3px;
-        background: $theme-success;
+        border-bottom: 2px solid $theme-success;
+       
         &:active,
         &:focus,
         &:hover {
           color: white;
-          background: $theme-success;
+          //background: $theme-success;
         }
       }
     }
